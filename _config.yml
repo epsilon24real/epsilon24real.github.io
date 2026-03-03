@@ -1,2 +1,5 @@
 title: Epsilon 24
 description: The Scientific Cloud
+.site-footer-owner, .site-footer-credits {
+  display: none;
+}
