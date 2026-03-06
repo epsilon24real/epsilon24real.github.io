@@ -1,4 +1,4 @@
 # Epsilon 24
 ![](background.jpeg)
-<h4> Simplify your scientific workflow with a scientific cloud 🚀<br>
+<h4> We're building the scientific cloud to simplify your scientific workflows 🚀<br>
 Coming soon ... </h4>
