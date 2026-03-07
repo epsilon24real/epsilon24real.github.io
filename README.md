@@ -4,5 +4,5 @@
 Coming soon ... </h4>
 <br>
 <br>
-[Contact Us](mailto:knowledge.systems.contact@gmail.com)
-[Privacy Policy](./privacy.md)
+
+[Contact Us](mailto:knowledge.systems.contact@gmail.com) &nbsp; [Privacy Policy](./privacy.md)
