@@ -11,6 +11,13 @@
     padding: 40px 20px;   /* Adds 40px top/bottom and 20px side padding */
   }
 
+  img {
+    max-width: 100%;  /* Image will never be wider than its container */
+    height: auto;     /* Maintains the original aspect ratio so it doesn't stretch */
+    display: block;   /* Removes the tiny gap at the bottom of images */
+    margin: 20px 0;   /* Adds some vertical space around the image */
+  }
+  \
   a {
     color: #ffffff; /* Sets the link to white */
     transition: opacity 0.2s ease; /* Smooth transition for the hover effect */
