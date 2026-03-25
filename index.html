@@ -8,7 +8,10 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    background-color: #222222;
+    background:
+      radial-gradient(1200px 500px at 10% -10%, rgba(120, 180, 255, 0.14), transparent 60%),
+      radial-gradient(900px 500px at 90% 0%, rgba(120, 255, 210, 0.10), transparent 58%),
+      linear-gradient(180deg, #171a1f 0%, #111419 100%);
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     line-height: 1.6;
@@ -17,11 +20,21 @@
     flex-direction: column;
     align-items: center;
     padding: clamp(24px, 6vw, 60px) clamp(16px, 5vw, 40px);
+    text-align: center;
   }
 
   .content {
     width: 100%;
     max-width: 800px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: clamp(16px, 4vw, 28px);
+    backdrop-filter: blur(2px);
   }
 
   h2 {
@@ -40,11 +53,28 @@
     object-fit: cover;
   }
 
+  .feature-video {
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 0 28px;
+    display: block;
+    background: #111111;
+  }
+
   .tagline {
     font-size: clamp(1.2rem, 2.8vw, 1.5rem);
     font-weight: 600;
     margin-bottom: 16px;
     line-height: 1.4;
+  }
+
+  .sub-tagline {
+    font-size: clamp(1.0rem, 2.2vw, 1.15rem);
+    font-weight: 700;
+    color: #d7d7d7;
+    margin-top: -4px;
+    margin-bottom: 24px;
+    line-height: 1.5;
   }
 
   .description {
@@ -59,8 +89,11 @@
     flex-wrap: wrap;
     gap: 8px 4px;
     align-items: center;
+    justify-content: center;
     font-size: 1.1rem;
     color: #aaaaaa;
+    margin-top: auto;
+    padding-top: 24px;
   }
 
   a {
@@ -73,19 +106,29 @@
     opacity: 0.7;
   }
 </style>
+<img src="epsilon-dmseriftext-logo-pure-cropped.svg" alt="Epsilon24 Logo" style="width: 110px; margin-top: 5px;">
 </head>
 <body>
-<div class="content">
-  <h2>Epsilon 24</h2>
-  <img src="background.jpeg" alt="Epsilon 24">
-  <p class="tagline">We're building the scientific cloud to simplify your scientific workflows 🚀</p>
-  <p class="description">Our goal is to simplify various scientific workflows while improving the latency of the algorithms themselves.<br>
-  We're currently building it for workflows in Biology, Physics and Chemistry 🛠</p>
+<br><br>
+<div class="content">  
+  <!-- <video id="feature-video" class="feature-video" controls preload="metadata">
+    <source src="" type="video/mp4">
+    Your browser does not support the video tag.
+  </video> -->
+  <p class="tagline">Interactive research tool to streamline navigation <br> of complex documents 🚀</p><br>
+  <p class="description"></p>
+  <p class="sub-tagline">We are currently running a closed Beta for early users,<br> more published soon ✨</p>
   <div class="footer-links">
     <a href="mailto:knowledge.systems.contact@gmail.com">Contact Us</a> &middot;
-    <a href="./privacy.html">Privacy Policy</a> &middot;
-    <a href="./terms.html">Terms of Service</a>
+    <a href="./privacy.md">Privacy Policy</a> &middot;
+    <a href="./terms.md">Terms of Service</a>
   </div>
 </div>
+<script>
+  // Set your custom video path here.
+  const customVideoPath = "epsilon_v5.mp4";
+  document.querySelector("#feature-video source").src = customVideoPath;
+  document.getElementById("feature-video").load();
+</script>
 </body>
 </html>
